@@ -8,10 +8,10 @@ void main() {
 
 class MyApp extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MyApp> createState() => MyAppState(); // ✅ Corrigido: nome público
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   final TextEditingController _notificacao1Controller = TextEditingController(
     text: 'Pix gerado!\nSua comissão: R\$ 19,90',
   );

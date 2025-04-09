@@ -1,15 +1,29 @@
 name: meu_app_notificacoes
 description: App de notificações locais personalizado
 version: 1.0.0+1
+
 environment:
   sdk: '^3.7.0'
-
-
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_local_notifications: ^16.1.0
 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icon/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  remove_alpha_ios: true
