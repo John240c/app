@@ -1,6 +1,6 @@
 name: meu_app_notificacoes
 description: App de notificações locais personalizado
-
+version: 1.0.0+1
 environment:
   sdk: '^3.7.0'
 
